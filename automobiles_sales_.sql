@@ -89,29 +89,29 @@ CREATE TABLE dealers (
 -- Insert data into Brands Table
 INSERT INTO brands (brandid, brandname)
 VALUES
-(1, 'Brand1'),
-(2, 'Brand2'),
-(3, 'Brand3'),
-(4, 'Brand4'),
-(5, 'Brand5'),
-(6, 'Brand6'),
-(7, 'Brand7'),
-(8, 'Brand8'),
-(9, 'Brand9'),
-(10, 'Brand10');
+(1, 'Mercedes Benz'),
+(2, 'Ferrari'),
+(3, 'Bugatti'),
+(4, 'Ducati'),
+(5, 'BMW'),
+(6, 'Porshe'),
+(7, 'Aston Martin'),
+(8, 'Chevrolet'),
+(9, 'Jaguar'),
+(10, 'Toyota');
 -- Insert data into Models Table
 INSERT INTO models (modelid, modelname)
 VALUES
-(1, 'Model1'),
-(2, 'Model2'),
-(3, 'Model3'),
-(4, 'Model4'),
-(5, 'Model5'),
-(6, 'Model6'),
-(7, 'Model7'),
-(8, 'Model8'),
-(9, 'Model9'),
-(10, 'Model10');
+(1, 'G Class'),
+(2, 'Spider Hybrid'),
+(3, 'Veyron'),
+(4, 'Monster'),
+(5, 'X1'),
+(6, '911'),
+(7, 'DB12'),
+(8, 'Impala'),
+(9, 'F-TYPE'),
+(10, 'Camry');
 -- Insert data into Supplier Table
 INSERT INTO supplier (supplierid, sname)
 VALUES
@@ -273,7 +273,7 @@ JOIN
 JOIN 
     options o ON v.optionid = o.optionid
 WHERE 
-    m.modelname = 'Model3'
+    m.modelname = 'Veyron'
 GROUP BY 
     sales_month
 ORDER BY 
